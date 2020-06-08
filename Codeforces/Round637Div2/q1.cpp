@@ -1,24 +1,3 @@
-#include<iostream>
-#include <cstdio>
-#define ll long long
-using namespace std;
-int main()
-{
-  ll t, n, a, b, c, d, gmin, gmax, tmin, tmax;
-  freopen("input.txt","r",stdin);
-  cin >> t;
-  for(int i=0; i<t; i++){
-    cin>>n>>a>>b>>c>>d;
-    gmin = (a-b);
-    gmax = (a+b);
-    tmin = (c-d);
-    tmax = (c+d);
-
-    if((gmin*n)>tmax || (gmax*n)<tmin){
-      cout<<"No"<<endl;
-    }
-    else{
-      cout<<"Yes"<<endl;
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:41e76ca96e709c7fcf7dcc64d49264ab6b88536b3260bf90d66c988906f35cc0
+size 425

@@ -1,35 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-typedef pair<int, int> pairs;
-int a[100005];
-
-void solve(){
-  ll n,k,i,j;
-  cin>>n;
-  for(i=0;i<n;i++){
-    cin>>a[i];
-  }
-  sort(a,a+n);
-  int count = 1;
-  int max = 1;
-  for(i=0;i<n;i++){
-    if(count>=a[i]){
-      count++;
-      max = count;
-    }
-    else
-      count++;
-  }
-  cout<<max<<endl;
-}
-
-int main()
-{
-  ll i,t;
-  freopen("input.txt","r",stdin);
-  cin >> t;
-  for(i=0; i<t; i++){
-    solve();
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:daf2120b7a3ad907fd6649d3b24dcba8684656e7f2b978a7902d51582c56c2a2
+size 478

@@ -1,34 +1,3 @@
-#include<iostream>
-#include <cstdio>
-#include <algorithm>
-using namespace std;
-#define ll long long
-ll arr[100005];
-int main()
-{
-  ll t, n, x, sum, index;
-  //freopen("input.txt","r",stdin);
-  cin >> t;
-  for(int i=0; i<t; i++){
-    cin>>n>>x;
-    sum = 0;
-    for(int j=0; j<n; j++){
-      cin>>arr[j];
-      sum += arr[j];
-    }
-    sort(arr, arr + n);
-    index = 0;
-    while(1){
-      //cout<<n<<endl;
-      if(n == 0 || sum/n >= x){
-        break;
-      }
-
-      sum -= arr[index];
-      index++;
-      n--;
-    }
-    cout<<n<<endl;
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:39c8128f330b4500a37f23ada990a211ae35caeefad5e0e0d9c86fce8e466ab6
+size 546

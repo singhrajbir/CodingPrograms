@@ -1,30 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-typedef pair<int, int> pairs;
-
-void solve(){
-  ll n,m,k,i,j;
-  cin>>n>>m>>k;
-  if(n/k >= m){
-    cout<<m<<endl;
-  }
-  else{
-    if((m-n/k)%(k-1) == 0){
-        cout<<(n/k - (m-n/k)/(k-1))<<endl;
-    }
-    else
-      cout<<(n/k - (m-n/k)/(k-1) - 1)<<endl;
-
-  }
-}
-
-int main()
-{
-  ll i,t;
-  freopen("input.txt","r",stdin);
-  cin >> t;
-  for(i=0; i<t; i++){
-    solve();
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:82a59eb26f53c84e4b99ed02d63e54dcada85f9f1f55dd83529edc60720b2369
+size 440

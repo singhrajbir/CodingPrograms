@@ -1,20 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-typedef pair<int, int> pairs;
-
-void solve(){
-  ll x1,y1,x2,y2;
-  cin>>x1>>y1>>x2>>y2;
-  cout<<(1+(x2-x1)*(y2-y1))<<endl;
-}
-
-int main()
-{
-  ll i,t;
-  freopen("input.txt","r",stdin);
-  cin >> t;
-  for(i=0; i<t; i++){
-    solve();
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1c9ca9c00a2be9e442b7ed3b72d3a8c8f944e9b884d6bdd2141e0e05a2edb0a
+size 301
